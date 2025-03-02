@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Caption to Sign Language",
+    "version": "1.0",
+    "description": "Extracts captions from YouTube and displays sign language videos.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["video/*.mp4"],
+        "matches": ["https://www.youtube.com/*"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+      
+    }
+  }
+  
+  
+  
+
