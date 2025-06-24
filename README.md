@@ -1,3 +1,17 @@
+Project Overview 
+
+The YouTube Caption to Sign Language Extension is a browser extension designed to 
+enhance video accessibility for the deaf and hard-of-hearing community. This extension 
+captures real-time YouTube captions, processes them, and displays corresponding sign 
+language videos in an embedded pop-up window. 
+
+Technology Stack 
+• Frontend: React.js (for UI and interactions) 
+• Backend: Not required (Client-side processing) 
+• API Integration: YouTube API (for captions) 
+• Storage: Local storage for sign language video mappings 
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
